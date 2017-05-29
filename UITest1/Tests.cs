@@ -30,6 +30,7 @@ namespace UITest1
         {
             app.Screenshot("First screen.");
         }
+
     }
 }
 

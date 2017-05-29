@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyRoadshowApp.ItemDetail">
+             x:Class="MyRoadshowApp.ItemDetail" BackgroundImage="background.jpg">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -9,6 +9,7 @@
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0">
             <StackLayout Margin="25">
+                <Label Text="Edit Item" FontSize="30" FontAttributes="Bold" HeightRequest="120"/>
                 <Label Text="Name:" TextColor="{StaticResource Primary}"/>
                 <Entry Text="{Binding Name}"/>
                 <Label Text="Date:"/>
@@ -20,7 +21,7 @@
                 <Entry Text="{Binding ImageURL}"/>
             </StackLayout>
         </ScrollView>
-        <Button Text="Save Changes" Grid.Row="1"/>
+        <Button Text="Save Changes" Clicked="Button_Clicked" Grid.Row="1"/>
     </Grid>
     
 </ContentPage>
