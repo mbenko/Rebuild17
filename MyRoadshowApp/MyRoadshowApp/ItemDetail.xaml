@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRoadshowApp.ItemDetail">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="0">
+            <StackLayout Margin="25">
+                <Label Text="Name:" TextColor="{StaticResource Primary}"/>
+                <Entry Text="{Binding Name}"/>
+                <Label Text="Date:"/>
+                <Entry Text="{Binding Date}"/>
+                <Label Text="Venue:"/>
+                <Entry Text="{Binding Venue}"/>
+                <Image Source="{Binding ImageURL}" Aspect="Fill" HeightRequest="75"/>
+                <Label Text="ImageURL:"/>
+                <Entry Text="{Binding ImageURL}"/>
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Save Changes" Grid.Row="1"/>
+    </Grid>
+    
+</ContentPage>

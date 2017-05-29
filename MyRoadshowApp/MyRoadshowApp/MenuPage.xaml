@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRoadshowApp.MenuPage">
+    <StackLayout>
+        <Image Source="rebuild17.png"/>
+        <Label Margin="15" Text="Menu 1" FontSize="25"/>
+        <Label Margin="15" Text="Menu 2" FontSize="25"/>
+        <Label Margin="15" Text="Menu 3" FontSize="25"/>
+    </StackLayout>
+</ContentPage>
