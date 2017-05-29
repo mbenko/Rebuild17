@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26510.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rebuild17-Core", "Rebuild2017-Core\Rebuild17-Core.csproj", "{47544CF1-C545-4E35-8ACD-EE632BB79547}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{EBDF2FD3-8F8F-4D2B-AE0D-D32ED15067A3}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\re-BUILD 2017 Roadshow.pdf = Docs\re-BUILD 2017 Roadshow.pdf
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rebuild17-Shared", "Rebuild17-Shared\Rebuild17-Shared.csproj", "{F0E96843-A992-4F8A-A3A4-9F51CFE517DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47544CF1-C545-4E35-8ACD-EE632BB79547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47544CF1-C545-4E35-8ACD-EE632BB79547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47544CF1-C545-4E35-8ACD-EE632BB79547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47544CF1-C545-4E35-8ACD-EE632BB79547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E96843-A992-4F8A-A3A4-9F51CFE517DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E96843-A992-4F8A-A3A4-9F51CFE517DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E96843-A992-4F8A-A3A4-9F51CFE517DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E96843-A992-4F8A-A3A4-9F51CFE517DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
