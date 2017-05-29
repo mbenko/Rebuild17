@@ -4,12 +4,12 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
-    <UserSecretsId>aspnet-Rebuild2017_Core-434C9E47-B9C7-4620-81CB-56DB49308F95</UserSecretsId>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>aspnet-Rebuild17_Core-D2E2FFCE-0EBB-4857-9765-E8AC7CBDBCEE</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="wwwroot\images\AltBannerRoadshow2.png" />
+    <Content Include="wwwroot\images\myRoadshowIcon.png" />
   </ItemGroup>
 
   <ItemGroup>

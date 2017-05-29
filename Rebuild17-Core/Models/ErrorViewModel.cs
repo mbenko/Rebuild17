@@ -1,6 +1,6 @@
 using System;
 
-namespace Rebuild2017_Core.Models
+namespace Rebuild17_Core.Models
 {
     public class ErrorViewModel
     {
