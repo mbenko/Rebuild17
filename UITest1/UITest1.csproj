@@ -59,5 +59,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyRoadshowApp\MyRoadshowApp.Android\MyRoadshowApp.Android.csproj">
+      <Project>{1c581fe5-8768-45da-8e3f-e57303a3cb84}</Project>
+      <Name>MyRoadshowApp.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
