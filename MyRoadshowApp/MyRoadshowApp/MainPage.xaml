@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:MyRoadshowApp"
              BindingContext="{x:Static local:MyAppContext.ViewModel}"
              x:Class="MyRoadshowApp.MainPage">
+
     <StackLayout Margin="20" Spacing="20">
 
         <Label Text="{Binding Title}" TextColor="Gray"
