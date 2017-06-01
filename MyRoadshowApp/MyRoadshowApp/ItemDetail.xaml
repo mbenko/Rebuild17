@@ -8,7 +8,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0">
-            <StackLayout Margin="25">
+            <StackLayout Margin="25" >
                 <Label Text="Edit Item" FontSize="30" FontAttributes="Bold" HeightRequest="120"/>
                 <Label Text="Name:" TextColor="{StaticResource Primary}"/>
                 <Entry Text="{Binding Name}"/>
@@ -21,7 +21,7 @@
                 <Entry Text="{Binding ImageURL}"/>
             </StackLayout>
         </ScrollView>
-        <Button Text="Save Changes" Clicked="Button_Clicked" Grid.Row="1"/>
+        <Button Text="Save Changes" Grid.Row="1"/>
     </Grid>
     
 </ContentPage>

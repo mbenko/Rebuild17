@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyRoadshowApp"
              BindingContext="{x:Static local:MyAppContext.ViewModel}"
-             x:Class="MyRoadshowApp.MainPage">
+             x:Class="MyRoadshowApp.MainPage" BackgroundImage="background.jpg">
+
     <StackLayout Margin="20" Spacing="20">
 
         <Label Text="{Binding Title}" TextColor="Gray"
@@ -24,7 +25,7 @@
 
         <Label x:Name="txtResult" Text="Response" TextColor="{StaticResource ErrorColor}" FontSize="15" />
 
-        <ListView ItemsSource="{Binding Events}" ItemSelected="ListView_ItemSelected" RowHeight="60" BackgroundColor="{StaticResource DarkBackgroundColor}">
+        <ListView ItemsSource="{Binding Events}"  RowHeight="60" BackgroundColor="{StaticResource DarkBackgroundColor}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -44,5 +45,4 @@
         </ListView>
 
     </StackLayout>
-    
 </ContentPage>

@@ -26,17 +26,17 @@ namespace MyRoadshowApp
             MainPage = new MasterDetailPage
             {
                 Master = new MenuPage { Title = "Menu" },
-                Detail = new MainPage { Title = "Roadshow" }
+                Detail = new MainPage { Title = "Dashboard" }
             };
         }
 
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-            MobileCenter.Start("android=46bb8944-268e-4fcd-9eb0-5d2f5d08072f;" +
-                   "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
-                   typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("android=1341ed6c-1901-4aa9-9879-ff60efba975e;" +
+                               "uwp={Your UWP App secret here};" +
+                               "ios={Your iOS App secret here}",
+                               typeof(Analytics), typeof(Crashes));
         }
 
 		protected override void OnSleep ()
