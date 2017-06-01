@@ -15,7 +15,7 @@
 
         <StackLayout Orientation="Horizontal">
             <Entry Text="{Binding name}" WidthRequest="250" x:Name="txtName" TextColor="Black" BackgroundColor="Silver"/>
-
+ 
             <Button Text="Add"
                     HorizontalOptions="Center" 
                     VerticalOptions="Center" 
