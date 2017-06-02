@@ -35,7 +35,7 @@ namespace UITest1
         public void NewTest1()
         {
             app.Screenshot("Screenshot");
-            app.TouchAndHold(x => x.Text("Chicago"));
+            app.TouchAndHold(x => x.Text("Milwaukee"));
             app.Tap(x => x.Text("Save Changes"));
             app.Tap(x => x.Class("EntryEditText"));
             app.EnterText(x => x.Class("EntryEditText"), "Helllo world");

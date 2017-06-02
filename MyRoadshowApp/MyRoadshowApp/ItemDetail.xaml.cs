@@ -22,7 +22,9 @@ namespace MyRoadshowApp
             BindingContext = myEvent;
         }
 
-        private async Task Button_Clicked(object sender, EventArgs e)
+
+
+        private async void Button_Clicked_2(object sender, EventArgs e)
         {
             // Save changes and close 
             await Navigation.PopModalAsync();

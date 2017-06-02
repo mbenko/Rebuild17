@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyRoadshowApp.ItemDetail">
+             x:Class="MyRoadshowApp.ItemDetail" BackgroundColor="Black">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -11,17 +11,17 @@
             <StackLayout Margin="25">
                 <Label Text="Edit Item" FontSize="30" FontAttributes="Bold" HeightRequest="120"/>
                 <Label Text="Name:" TextColor="{StaticResource Primary}"/>
-                <Entry Text="{Binding Name}"/>
+                <Entry Text="{Binding Name}" BackgroundColor="Silver"/>
                 <Label Text="Date:"/>
-                <Entry Text="{Binding Date}"/>
+                <Entry Text="{Binding Date}" BackgroundColor="Silver"/>
                 <Label Text="Venue:"/>
-                <Entry Text="{Binding Venue}"/>
+                <Entry Text="{Binding Venue}" BackgroundColor="Silver"/>
                 <Image Source="{Binding ImageURL}" Aspect="Fill" HeightRequest="75"/>
                 <Label Text="ImageURL:"/>
-                <Entry Text="{Binding ImageURL}"/>
+                <Entry Text="{Binding ImageURL}" BackgroundColor="Silver"/>
             </StackLayout>
         </ScrollView>
-        <Button Text="Save Changes" Clicked="Button_Clicked" Grid.Row="1"/>
+        <Button Text="Save Changes" Clicked="Button_Clicked_2" Grid.Row="1"/>
     </Grid>
     
 </ContentPage>

@@ -22,7 +22,7 @@
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
             <Style TargetType="ContentPage">
-                <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
