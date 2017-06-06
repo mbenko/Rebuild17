@@ -12,8 +12,11 @@ namespace UITest1
         {
             if (platform == Platform.Android)
             {
+                
                 return ConfigureApp
                     .Android
+                    .EnableLocalScreenshots()
+                    .ApkFile("..\\..\\..\\MyRoadshowApp\\MyRoadshowApp.Android\\bin\\release\\MyRoadshowApp.Android.APK")
                     .StartApp();
             }
 

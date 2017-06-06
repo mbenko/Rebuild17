@@ -8,7 +8,6 @@ using Xamarin.UITest.Queries;
 namespace UITest1
 {
     [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
     public class Tests
     {
         IApp app;
@@ -32,7 +31,7 @@ namespace UITest1
         }
 
         [Test]
-        public void NewTest1()
+        public void FirstThingsFirst()
         {
             app.Screenshot("Screenshot");
             app.TouchAndHold(x => x.Text("Milwaukee"));

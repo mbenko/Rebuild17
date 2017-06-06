@@ -152,7 +152,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\background.jpg" />
+    <AndroidResource Include="Resources\Drawable\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\kansascity.jpg">
