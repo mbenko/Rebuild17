@@ -3,8 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyRoadshowApp"
              BindingContext="{x:Static local:MyAppContext.ViewModel}"
-             x:Class="MyRoadshowApp.MainPage">
+             x:Class="MyRoadshowApp.MainPage" BackgroundColor="Orange">
 
-    <Label Text="Welcome to Xamarin Forms!" HorizontalOptions="Center" VerticalOptions="Center" />
+    <StackLayout Margin="20" Spacing="20">
+
+        <Label Text="{Binding Title}" TextColor="Navy"
+               VerticalOptions="Center"  FontSize="25"
+               HorizontalOptions="Center" />
+
+
+        <Label Text="Enter your name:" TextColor="Black"/>
+
+
+        <StackLayout Orientation="Horizontal">
+            <Entry Text="{Binding name}" WidthRequest="250" x:Name="txtName" TextColor="Black" BackgroundColor="Silver"/>
+
+
+            <Button Text="Add Event" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center" 
+                    BackgroundColor="LightBlue" 
+                    TextColor="Blue"/>
+        </StackLayout>
+        <Label x:Name="txtResult" Text="{Binding Title}" TextColor="Maroon" FontSize="25" />
+
+
+        <ListView ItemsSource="{Binding Events}" RowHeight="70" BackgroundColor="AntiqueWhite" ItemSelected="ListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="4">
+                            <Image Source="{Binding ImageURL}" Aspect="AspectFill" />
+                            <!--<controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" BorderThickness="3" BorderColor="WhiteSmoke" />-->
+                            <StackLayout >
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Date}"  FontSize="Medium"/>
+                                    <Label Text="{Binding Venue}"  FontSize="Medium" FontAttributes="Bold"/>
+                                </StackLayout>
+                                <Label Text="{Binding Name}" TextColor="Navy" FontSize="Small"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+
 
 </ContentPage>

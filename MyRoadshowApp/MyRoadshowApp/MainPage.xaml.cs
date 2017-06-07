@@ -19,5 +19,10 @@ namespace MyRoadshowApp
 
             Navigation.PushModalAsync(new ItemDetail(myEvent));
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
