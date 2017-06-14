@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rebuild17-core:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

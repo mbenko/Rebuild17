@@ -25,7 +25,7 @@
 
         <Label x:Name="txtResult" Text="Response" TextColor="{StaticResource ErrorColor}" FontSize="15" />
 
-        <ListView ItemsSource="{Binding Events}" RowHeight="85" ItemSelected="ListView_ItemSelected" BackgroundColor="{StaticResource DarkBackgroundColor}">
+        <ListView ItemsSource="{Binding Events}" ItemSelected="ListView_ItemSelected" RowHeight="60" BackgroundColor="{StaticResource DarkBackgroundColor}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -44,6 +44,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-    </StackLayout>    
-
+    </StackLayout>
+ 
 </ContentPage>

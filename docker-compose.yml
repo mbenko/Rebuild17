@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rebuild17-core:
+    image: rebuild17-core
+    build:
+      context: ./Rebuild17-Core
+      dockerfile: Dockerfile

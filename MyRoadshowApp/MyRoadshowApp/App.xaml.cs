@@ -33,7 +33,7 @@ namespace MyRoadshowApp
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-            MobileCenter.Start("android=f03bd74c-7cda-43a2-b6ec-455481426669;" +
+            MobileCenter.Start("android=de1abcc1-9e33-4c16-ab40-3cb33586998f;" +
                                "uwp={Your UWP App secret here};" +
                                "ios={Your iOS App secret here}",
                                typeof(Analytics), typeof(Crashes));
